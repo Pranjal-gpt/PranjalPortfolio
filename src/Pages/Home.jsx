@@ -50,7 +50,7 @@ function Home() {
             with in Web Development.
           </h3>
         </div>
-        <div className="skills-block flex gap-5 flex-wrap justify-center lg:w-2/3">
+        <div className="skills-block flex gap-5 flex-wrap justify-center lg:w-2/3 ">
           <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm  hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
               className="w-24 mx-auto"

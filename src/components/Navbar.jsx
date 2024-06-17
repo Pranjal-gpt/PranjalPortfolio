@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
 
-    <nav className='flex justify-between px-10 py-8 border-b-2 w-10/12 mx-auto border-black'>
+    <nav className='flex justify-between px-10 py-8 border-b-2 lg:w-10/12 w-full mx-auto border-black'>
         <div className='name font-bold text-2xl'>
             PranjalGPT
         </div>
