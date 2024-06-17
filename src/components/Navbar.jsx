@@ -10,10 +10,10 @@ function Navbar() {
             PranjalGPT
         </div>
         <div className='flex gap-6 text-xl'>
-           <a href="#">Home</a> 
-           <a href="#skills">Skills</a> 
-           <a href="#projects">Projects</a> 
-           <a href="#contact">Contact</a> 
+           <a href="/#">Home</a> 
+           <a href="/#skills">Skills</a> 
+           <a href="/#projects">Projects</a> 
+           <a href="/#contact">Contact</a> 
 
         </div>
         

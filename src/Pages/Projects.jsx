@@ -3,6 +3,7 @@ import Project from '../components/Project'
 import todo from '../assets/todolist.jpeg'
 import Bakers from '../assets/bakerskitchens.jpeg'
 import spotify from '../assets/spotify.jpeg'
+import Cursor from "react-cursor-follow";
 
 function Projects() {
   useEffect(
@@ -19,7 +20,7 @@ function Projects() {
     {
       title:"Weather App",
       des:"a dynamic Weather Forecast Application! Using HTML, CSS, and JavaScript, I've developed a user-friendly platform that seamlessly integrates with real-time weather APIs. ",
-      img:"https://media.licdn.com/dms/image/D4D22AQGjG_ofGCHMQQ/feedshare-shrink_2048_1536/0/1708076694950?e=1721260800&v=beta&t=FUPh9szIxSHS1KaeuyqJMYX1fi0G2b0x2C8JbE4FcVQ",
+      img:"https://i.postimg.cc/pL53RGFm/image.png",
       tech:["HTML", "CSS","JS"],
       github:"https://github.com/Pranjal-gpt/My-weather-app",
       web:"https://pranjal-gpt.github.io/My-weather-app/"
@@ -33,7 +34,7 @@ function Projects() {
       web:"https://pranjal-gpt.github.io/TodoList/"
     },
     {
-      title:"Baker's Kitchens",
+      title:"Baker's Kitchen",
       des:"a frontend for a delightful bakery experience. It's been an incredible journey of learning, from web design fundamentals to creating an immersive online space.",
       img:Bakers,
       tech:["HTML", "CSS","JS"],
@@ -51,7 +52,9 @@ function Projects() {
   ]
   return (
     <div>
-      <h1 className='text-center text-3xl text-gray-500 font-bold'>My <span className='text-indigo-600'>Projects</span></h1>
+     <Cursor  size={10}  color={"#6366F1"} className="z-50"/>
+
+      <h1 className='text-center text-3xl text-gray-500 font-bold mt-10'>My <span className='text-indigo-600'>Projects</span></h1>
       <div className='py-10 flex flex-wrap justify-center items-center  gap-10'>
       {projects.map((item)=>(
         <Project

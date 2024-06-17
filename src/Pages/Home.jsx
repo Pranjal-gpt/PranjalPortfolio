@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import art from "../assets/home.png";
 import { Link } from "react-router-dom";
+import Cursor from "react-cursor-follow";
+
 function Home() {
   const [name,setName] =useState("")
   const [email,setemail] =useState("")
@@ -10,6 +10,7 @@ function Home() {
   const emailto=`mailto:pranjalgupta21088@gmail.com?subject=${subject}&body=${msg}`
   return (
     <>
+     <Cursor  size={10}  color={"#6366F1"} className="z-50"/>
       <main  id="#" className="flex px-20 gap-0 lg:gap-5 lg:min-h-[60vh] min-h-[55vh] items-center justify-around flex-wrap-reverse">
         <div className="flex flex-col gap-5  lg:w-[46%]">
           <h1 className="text-3xl font-bold ">
@@ -49,7 +50,7 @@ function Home() {
             with in Web Development.
           </h3>
         </div>
-        <div className="flex gap-5 flex-wrap justify-center lg:w-2/3">
+        <div className="skills-block flex gap-5 flex-wrap justify-center lg:w-2/3">
           <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm  hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
               className="w-24 mx-auto"
@@ -190,14 +191,17 @@ function Home() {
          <textarea   row="3" className="border-2 p-2 rounded-lg border-indigo-600"
             type="text" name="messgae" value={msg} onChange={(e)=>{setmsg(e.target.value)}}id=""></textarea>
           </div>
-          <a  href={emailto} className="border-indigo-600 border-2 rounded-md font-bold px-2 py-1 w-fit">Send</a>
+          <a  href={emailto} className="border-indigo-600 hover:bg-indigo-100 hover:shadow-lg border-2 rounded-md font-bold px-2 py-1 w-fit">Send</a>
           <div className="flex gap-8 text-indigo-600 text-3xl mt-5 justify-center">
-          <a  target="_blank" href="https://github.com/Pranjal-gpt"><i class="fa-brands fa-github"></i></a>
-          <a  target="_blank" href="https://www.linkedin.com/in/pranjal-gupta-20a093245/"><i class="fa-brands fa-linkedin"></i></a>
-          <a  target="_blank" href="mailto:pranjalgupta21088@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a className="hover:scale-125" target="_blank" href="https://github.com/Pranjal-gpt"><i class="fa-brands fa-github"></i></a>
+          <a className="hover:scale-125" target="_blank" href="https://www.linkedin.com/in/pranjal-gupta-20a093245/"><i class="fa-brands fa-linkedin"></i></a>
+          <a className="hover:scale-125" target="_blank" href="mailto:pranjalgupta21088@gmail.com"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
       </main>
+      <footer>
+        <div className="text-center p-3">  Portfolio ©️@ <span className="text-indigo-700 font-semibold">Pranjal Gupta</span></div>
+      </footer>
     </>
   );
 }

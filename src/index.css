@@ -11,3 +11,10 @@ nav a:hover{
 .name{
   font-family:"Dancing Script", cursive;
 }
+.skills-block div{
+  cursor: pointer;
+
+}
+.skills-block div:hover{
+  transform:translateY(-10px);
+}
