@@ -5,11 +5,11 @@ function Navbar() {
   return (
     <>
 
-    <nav className='flex justify-between px-10 py-8 border-b-2 lg:w-10/12 w-full mx-auto border-black'>
-        <div className='name font-bold text-2xl'>
+    <nav className=' flex justify-between px-10 py-8 border-b-2 lg:w-10/12 w-full  mx-auto border-black'>
+        <div className='name font-bold text-md lg:text-2xl'>
             PranjalGPT
         </div>
-        <div className='flex gap-6 text-xl'>
+        <div className='flex gap-2 text-md lg:gap-6 lg:text-xl'>
            <a href="/#">Home</a> 
            <a href="/#skills">Skills</a> 
            <a href="/#projects">Projects</a> 

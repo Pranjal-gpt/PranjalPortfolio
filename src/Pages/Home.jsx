@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
      <Cursor  size={10}  color={"#6366F1"} className="z-50"/>
-      <main  id="#" className="flex px-20 gap-0 lg:gap-5 lg:min-h-[60vh] min-h-[55vh] items-center justify-around flex-wrap-reverse">
+      <main  id="#" className="flex  lg:px-20 px-10 gap-0 lg:gap-5 lg:min-h-[60vh] min-h-[55vh] items-center justify-around flex-wrap-reverse">
         <div className="flex flex-col gap-5  lg:w-[46%]">
           <h1 className="text-3xl font-bold ">
             <span className=" text-gray-400">Hi there!</span>
@@ -22,7 +22,7 @@ function Home() {
               A Web Developer
             </span>
           </h1>
-          <h3 className="text-xl">
+          <h3 className="text-xl text-justify">
             Hey, glad to see you here! I'm a passionate web developer with expertise in creating dynamic and responsive websites. I specialize in front-end , delivering high-quality, user-friendly solutions to enhance digital experiences. Let's build something amazing together!
           </h3>
           <a
@@ -38,8 +38,8 @@ function Home() {
         </div>
       </main>
 
-      <main id="skills" className="flex px-20 gap-0 lg:gap-5 lg:min-h-screen min-h-[60vh] items-center justify-around flex-wrap-reverse flex-col">
-        <div className="flex flex-col gap-5  lg:w-[30%] text-center ">
+      <main id="skills" className="flex  lg:px-20  px-10 py-5 lg:py-0 gap-0 lg:gap-5 lg:min-h-screen min-h-[60vh] items-center justify-around flex-wrap-reverse flex-col ">
+        <div className="flex flex-col gap-5  lg:w-[30%] text-center  ">
           <h1 className="text-3xl font-bold ">
             <span className=" text-gray-400">My</span>
 
@@ -50,73 +50,83 @@ function Home() {
             with in Web Development.
           </h3>
         </div>
-        <div className="skills-block flex gap-5 flex-wrap justify-center lg:w-2/3 ">
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm  hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+        <div className="skills-block flex gap-5 flex-wrap justify-center items-center lg:items-start lg:w-2/3 ">
+
+
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm  hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-24 mx-auto"
+              className=" w-12 lg:w-24 mx-auto"
               src="https://static-00.iconduck.com/assets.00/html-5-icon-726x1024-evem6gg5.png"
               alt="html"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+
+
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-24 mx-auto"
+              className=" w-12 lg:w-24 mx-auto"
               src="https://static-00.iconduck.com/assets.00/css-3-icon-726x1024-610441pl.png"
               alt="css"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+
+
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-24 mx-auto"
+              className=" w-12 lg:w-24 mx-auto"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCVQBEuZb3LgGTcO-muTUzsNkf8DBIHZqYg6S5-0NYNKxvy7safziy_-9o7fEN1-pc0k&usqp=CAU"
               alt="js"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center ">
+
+
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center ">
             <img
-              className="w-24 mx-auto"
+              className=" w-12 lg:w-24 mx-auto"
               src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
               alt="react"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+
+
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-32 mx-auto"
+              className="lg:w-32 w-14 mx-auto "
               src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg"
               alt="mongodb"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-32 mx-auto"
+              className="lg:w-32 w-14 mx-auto"
               src="https://www.svgrepo.com/show/303251/mysql-logo.svg"
               alt="mysql"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-32 mx-auto"
+              className="lg:w-32 w-14 mx-auto"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCCdLCDhY7mwKXP4bHVQ1SFZxn3pPM2QLFw&s"
               alt="java"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-36 mx-auto"
+              className="lg:w-36 w-14  mx-auto"
               src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"
               alt="git"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-36 mx-auto"
+              className="lg:w-36 w-14 mx-auto"
               src="https://logowik.com/content/uploads/images/git6963.jpg"
               alt="github"
             />
           </div>
-          <div className="border-2 p-2 min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
+          <div className="border-2 lg:p-2 p-1  lg:min-w-40 rounded-lg shadow-sm hover:shadow-indigo-300 hover:shadow-lg duration-500 flex items-center">
             <img
-              className="w-32 mx-auto"
+              className="lg:w-32 w-20 mx-auto"
               src="https://cdn.worldvectorlogo.com/logos/tailwind-css-1.svg"
               alt=""
             />
@@ -124,14 +134,14 @@ function Home() {
         </div>
       </main>
 
-      <main  id="projects" className="flex px-20 gap-0 lg:gap-5 lg:min-h-screen min-h-[60vh] items-center justify-around flex-wrap-reverse">
+      <main  id="projects" className="flex  lg:px-20 px-10 gap-0 lg:gap-5 lg:min-h-screen min-h-[60vh] items-center justify-around flex-wrap-reverse">
         <div className="flex flex-col gap-5  lg:w-[46%]">
           <h1 className="text-3xl font-bold ">
             <span className=" text-gray-400">My</span>
 
             <span className="text-indigo-500 lg:ml-2"> Projects</span>
           </h1>
-          <h3 className="text-xl">
+          <h3 className="text-xl ">
           Explore my projects to see a showcase of my work, skills, and accomplishments. Click here to discover My Projects and creative designs across various fields and technologies.
           </h3>
 
@@ -148,7 +158,7 @@ function Home() {
         </div>
       </main>
       {/* contact section */}
-      <main  id="contact" className="flex px-20 gap-0 lg:gap-5 lg:min-h-screen min-h-[60vh] items-center justify-around flex-wrap-reverse">
+      <main  id="contact" className="flex  lg:px-20 px-10 gap-0 lg:gap-5 lg:min-h-screen min-h-[60vh] items-center justify-around flex-wrap-reverse">
         <div className="flex flex-col gap-5  lg:w-[46%]">
           
           <br />

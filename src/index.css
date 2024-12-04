@@ -4,6 +4,7 @@
 @tailwind utilities;
 *{
   scroll-behavior: smooth;
+  
 }
 nav a:hover{
   color:blueviolet ;
