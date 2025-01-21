@@ -1,25 +1,32 @@
 import React from "react";
-import Home from "./Pages/Home";
-import Projects from "./Pages/Projects";
-import { BrowserRouter, Route,Routes,Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-function App() {
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import About from "./components/About";
+
+import { BrowserRouter, Route, Routes, Outlet, createBrowserRouter } from "react-router-dom";
+
+const App = () => {
+  
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar/>} >
-     
-          <Route index element={<Home />} />
-          <Route path="/Projects" element={<Projects/>}/>
-          
-        </Route>
-      </Routes>
+    <>
+      {/* <Navbar/>
+     <Home/> */}
 
-    
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
 
-   
-    </BrowserRouter>
+            
+            <Route path="about" element={<About />} />
+          </Route>
+            <Route path="projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
+      
+    </>
   );
-}
+};
 
 export default App;
