@@ -12,6 +12,7 @@ import { SiMongodb, SiMysql, SiCanva, SiGit, SiRedux } from "react-icons/si";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import About from './About'
+import Home1 from "..assets/home.png"
 // import { FaGithub } from "react-icons/fa";
 // import { FaGithub } from "react-icons/fa";
 
@@ -39,7 +40,7 @@ const [size, setsize] = useState(35)
           </a>
         </div>
         <div className="logo  lg:w-1/3 w-3/4 ">
-          <img src="src\assets\home.png " alt="img" />
+          <img src={Home1} alt="img" />
         </div>
       </main>
       <About/>
