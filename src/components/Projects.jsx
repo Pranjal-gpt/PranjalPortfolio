@@ -5,7 +5,10 @@ import Bakers from '../assets/bakerskitchens.jpeg'
 import spotify from '../assets/spotify.jpeg'
 import notesaver from '../assets/notesaver.png'
 import { useNavigate } from "react-router-dom";
+import elegance from '../assets/elegancejewellery-png.jpg'
+import weather from '../assets/weather.jpg'
 const Projects = () => {
+  
 const navigate= useNavigate()
 const back= ()=>{
   navigate(-1)
@@ -19,7 +22,7 @@ useEffect(() => {
     {
       title:"Elegance Jewellery",
       des:" A user-friendly and secure jewellery e-commerce platform that provides a easy and  enjoyable shopping experience for customers using MERN stack ",
-      img:"https://i.postimg.cc/xCC1vPyz/elegancejewellery-png.png",
+      img:elegance,
       tech:["HTML", "CSS","JS","REACT.JS","NODE.JS","MONGODB","TAILWIND","EXPRESS.JS"],
       github:"https://github.com/Pranjal-gpt/jewellery-ecommerce-website/",
       web:"https://elegance-jewellery.vercel.app/"
@@ -27,7 +30,7 @@ useEffect(() => {
     {
       title:"Weather App",
       des:"a dynamic Weather Forecast Application! Using HTML, CSS, and JavaScript, I've developed a user-friendly platform that seamlessly integrates with real-time weather APIs. ",
-      img:"https://i.postimg.cc/pL53RGFm/image.png",
+      img:weather,
       tech:["HTML", "CSS","JS"],
       github:"https://github.com/Pranjal-gpt/My-weather-app",
       web:"https://pranjal-gpt.github.io/My-weather-app/"
