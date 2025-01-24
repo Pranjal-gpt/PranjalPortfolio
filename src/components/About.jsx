@@ -1,4 +1,5 @@
 import React from 'react'
+import about from "../assets/about.png"
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <div className="container h-[80%] w-[80%] text-white flex lg:flex-row flex-col  bg-black shadow-xl  bg-opacity-30 rounded-lg p-5 lg:p-12 items-center justify-center  ">
           <div className="left lg:text-3xl font-bold  lg:w-2/5 ">
             <h1 className='lg:text-left text-center text-xl'>About Me</h1>
-            <img src="src\assets\about.png " alt="img" />
+            <img src={about} alt="img" />
           </div>
 
           <div className="About  lg:text-2xl lg:w-2/5 py-10 h-full">
